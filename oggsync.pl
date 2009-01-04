@@ -91,8 +91,6 @@ sub wanted {
     /^.*\.ogg\z/si && push(@pending, $File::Find::name);
 }
 
-
-
 # Start a thread to encode an ogg file to an mp3 file
 sub process_file
 {
