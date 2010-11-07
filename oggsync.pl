@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# Author: Chris Eberle <eberle1080@gmail.com>
 
 use File::Find ();
 use File::stat;
@@ -10,8 +11,8 @@ use threads;
 use Thread::Semaphore;
 
 # Variables you should change to suit your preferences
-our $in_dir = "/data/audio/music";
-our $out_dir = "/data/audio/ipod";
+our $in_dir = "/data/media/music";
+our $out_dir = "/data/media/ipod";
 our $quality = "2";
 our $channels = "j";
 our $bitrate = "128";
